@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101">
+  <g id="Group_36" data-name="Group 36" transform="translate(-3809 -1463)">
+    <g id="Group_33" data-name="Group 33" transform="translate(0 136)">
+      <g id="Ellipse_61" data-name="Ellipse 61" transform="translate(3809 1327)" fill="#2d4160" stroke="#707070" stroke-width="3">
+        <circle cx="50.5" cy="50.5" r="50.5" stroke="none"/>
+        <circle cx="50.5" cy="50.5" r="49" fill="none"/>
+      </g>
+      <path id="Icon_material-person" data-name="Icon material-person" d="M29.35,29.35A11.675,11.675,0,1,0,17.675,17.675,11.672,11.672,0,0,0,29.35,29.35Zm0,5.837C21.557,35.187,6,39.1,6,46.862V52.7H52.7V46.862C52.7,39.1,37.143,35.187,29.35,35.187Z" transform="translate(3830.697 1347.585)" fill="none" stroke="#fff" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,473 @@
+    @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+    * {
+        font-family: 'Noto Sans TC';
+    }
+    
+    div:hover a {
+        text-decoration: none;
+    }
+    /* 麵包屑*/
+    
+    .breadCrumb {
+        margin: 80px 0 10px 15%;
+    }
+    
+    .breadCrumb .list-breadcrumb li {
+        display: inline-block;
+    }
+    
+    .breadCrumb .list-breadcrumb a {
+        font-size: 14px;
+        color: #1B1B1C;
+        text-decoration: none;
+        display: inline-block;
+        margin: 5px;
+    }
+    
+    .breadCrumb .list-breadcrumb li:first-child a::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background-image: url(../img/wheat.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0 2px;
+    }
+    
+    .breadCrumb .list-breadcrumb li:nth-child(2)::before,
+    .breadCrumb .list-breadcrumb li:nth-child(3)::before {
+        content: "/";
+        color: rgba(27, 27, 28, 0.671);
+    }
+    /* 對話框 */
+    
+    .talk {
+        width: 100%;
+        background-image: url(../img/dessertbg.jpg);
+        background-size: cover;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    
+    .talk.-bg {
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .talk .bgcolor {
+        background-color: #f3f3f3;
+    }
+    /* 對話框上方藍色那條 */
+    
+    .talk .row1 {
+        background-color: #3D4C66;
+    }
+    
+    .talk .row1 p {
+        text-align: center;
+        margin: 10px;
+        color: #f3f3f3;
+    }
+    /* 對話內容 */
+    
+    .talk .row2,
+    .row3 {
+        position: relative;
+        padding: 10px;
+    }
+    
+    .talk .row2>div>p {
+        text-align: right;
+    }
+    /* 對話大頭貼 */
+    
+    .talk .leftimg,
+    .rightimg {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-image: url(../img/bear-photo.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -40%);
+    }
+    
+    .talk .leftimg {
+        background-image: url(../img/logo-bear.png);
+        border: 1px solid #ccc;
+        background-size: cover;
+    }
+    /* 對話訊息 */
+    
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+    
+    @keyframes caret {
+        50% {
+            border-color: transparent;
+        }
+    }
+    
+    @keyframes hideborder {
+        100% {
+            border: 0px;
+        }
+    }
+    
+    .talk .message {
+        background-color: #F0EADA;
+        border-radius: 10px;
+        padding: 5px 10px;
+        text-align: center;
+    }
+    
+    .talk .message p {
+        display: inline-block;
+        margin: 15px;
+    }
+    
+    .talk .row2 .message p {
+        width: 10em;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: .05em solid;
+        animation: typing 1.5s steps(10) 0.5s backwards, caret 0.5s steps(1) 0.5s, hideborder 0.1s forwards 4s;
+    }
+    
+    .talk .row3 .message p {
+        width: 12em;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: .05em solid;
+        animation: typing 1.5s steps(12) 2.7s backwards, caret 0.5s steps(1) 2.7s, hideborder 0.1s forwards 5s;
+    }
+    
+    .talk .row3 .triangle {
+        position: absolute;
+        left: -5%;
+        top: 50%;
+        border-top: 20px solid #F0EADA;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid #F0EADA;
+        border-left: 20px solid transparent;
+    }
+    
+    .talk .row2 .triangle {
+        position: absolute;
+        right: -5%;
+        top: 60%;
+        border-top: 20px solid #F0EADA;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-left: 20px solid #F0EADA;
+    }
+    /* 頁籤列表 */
+    
+    .tab-list .tabpage {
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #fff;
+        margin: 20px 0;
+        background-color: #E1C9B1;
+        cursor: pointer;
+    }
+    
+    .tab-list img {
+        width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    /* 頁籤內容區塊 */
+    
+    .tab_contents .tab {
+        display: none;
+    }
+    
+    .tab_contents .tab.-on {
+        display: block;
+        border: 3px solid #E1C9B1;
+        background-color: #fff;
+        border-radius: 10px;
+        padding-bottom: 50px;
+    }
+    /* button */
+    
+    .button {
+        width: 80px;
+        position: relative;
+        margin: 0 auto;
+    }
+    
+    .button .white {
+        width: 80px;
+        height: 35px;
+        background-color: #fff;
+        border: 1px solid #0A2530;
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+    
+    .button span {
+        color: #0A2530;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    
+    .button img {
+        width: 80%;
+        margin-top: 15px;
+    }
+    
+    .button .blue {
+        background-color: #0A2530;
+        width: 80px;
+        height: 35px;
+        position: absolute;
+        top: 6px;
+        left: 5px;
+        transition: all 0.2s;
+        z-index: 1;
+    }
+    
+    .button:hover .blue {
+        top: -5px;
+    }
+    
+    .button:hover a {
+        text-decoration: none;
+    }
+    /* 各分頁 */
+    
+    .tab_contents .tab {
+        margin-top: 100px;
+        padding-top: 5px;
+    }
+    
+    .tab_contents .tab.-on {
+        border: 1px solid #000;
+    }
+    
+    .tab_contents .item a {
+        display: block;
+    }
+    
+    .tab_contents .item p {
+        text-align: center;
+        color: #1b1b1c;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    .tab_contents img {
+        width: 100%;
+    }
+    
+    .tab_contents .button {
+        margin: 20px auto;
+    }
+    
+    .breadimg {
+        transform: all 2s;
+    }
+    /* footer */
+    
+    footer .container {
+        display: none;
+    }
+    
+    @media screen and (min-width:768px) and (max-width:992px) {
+        .tab-list span {
+            font-size: 12px;
+        }
+        .tab-list img {
+            width: 120%;
+            position: relative;
+            left: -5px;
+        }
+        .button {
+            width: 80px;
+            position: relative;
+            margin: 0 auto;
+            left: -5px;
+        }
+        .button .white {
+            width: 60px;
+            height: 30px;
+        }
+        .button .blue {
+            width: 60px;
+            height: 30px;
+            position: absolute;
+            top: 6px;
+            left: 3px;
+        }
+        .button:hover .blue {
+            top: -3px;
+        }
+        .tab_contents .item p {
+            font-size: 16px;
+        }
+        .tab_contents .button {
+            width: 80px;
+            margin: 10px auto;
+        }
+        .tab_contents .button .white {
+            width: 80px;
+            height: 35px;
+        }
+        .tab_contents .button .blue {
+            width: 80px;
+            height: 35px;
+            position: absolute;
+            top: 6px;
+            left: 6px;
+        }
+        .tab_contents .button:hover .blue {
+            top: -5px;
+        }
+    }
+    
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+        .talk .row2 .triangle {
+            position: absolute;
+            right: 0%;
+            top: 60%;
+            border-top: 10px solid #F0EADA;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-left: 10px solid #F0EADA;
+        }
+        .talk .row3 .triangle {
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            border-top: 10px solid #F0EADA;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid #F0EADA;
+            border-left: 10px solid transparent;
+        }
+        .tab-list span {
+            font-size: 12px;
+        }
+        .button {
+            width: 65px;
+            position: relative;
+            margin: 0 auto;
+            left: 0px;
+        }
+        .button .white {
+            width: 65px;
+            height: 30px;
+        }
+        .button .blue {
+            width: 65px;
+            height: 30px;
+            position: absolute;
+            top: 6px;
+            left: 3px;
+        }
+        .button:hover .blue {
+            top: -3px;
+        }
+        .tab_contents .item p {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .tab_contents .button span {
+            font-size: 12px;
+        }
+    }
+    
+    @media screen and (max-width: 575px) {
+        p {
+            font-size: 12px;
+        }
+        .talk .message {
+            padding: 2px;
+        }
+        .talk .message p {
+            display: inline-block;
+            font-size: 12px;
+            margin: 5px;
+            padding: 5px 0;
+        }
+        .talk .row2 .triangle {
+            position: absolute;
+            right: 5px;
+            top: 60%;
+            border-top: 10px solid #F0EADA;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-left: 10px solid #F0EADA;
+        }
+        .talk .row3 .triangle {
+            position: absolute;
+            left: 5px;
+            top: 60%;
+            border-top: 10px solid #F0EADA;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid #F0EADA;
+            border-left: 10px solid transparent;
+        }
+        .talk .leftimg,
+        .rightimg {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-image: url(../img/bear-photo.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -40%);
+        }
+        .talk .leftimg {
+            background-image: url(../img/logo-bear.png);
+            border: 1px solid #ccc;
+            background-size: cover;
+        }
+        .tab-list span {
+            font-size: 12px;
+        }
+        .button {
+            width: 65px;
+            position: relative;
+            margin: 0 auto;
+            left: 0px;
+        }
+        .button .white {
+            width: 65px;
+            height: 30px;
+        }
+        .button .blue {
+            width: 65px;
+            height: 30px;
+            position: absolute;
+            top: 6px;
+            left: 3px;
+        }
+        .button:hover .blue {
+            top: -3px;
+        }
+        .tab_contents .item p {
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .tab_contents .button span {
+            font-size: 12px;
+        }
+        .header {
+            color: #f3f3f3;
+        }
+    }

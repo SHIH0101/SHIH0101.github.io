@@ -1,0 +1,234 @@
+    @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+    * {
+        font-family: 'Noto Sans TC';
+    }
+    
+    @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+    * {
+        font-family: 'Noto Sans TC';
+    }
+    /* 麵包屑*/
+    
+    .breadCrumb {
+        margin: 80px 0 10px 15%;
+    }
+    
+    .breadCrumb .list-breadcrumb li {
+        display: inline-block;
+    }
+    
+    .breadCrumb .list-breadcrumb a {
+        font-size: 14px;
+        color: #1B1B1C;
+        text-decoration: none;
+        display: inline-block;
+        margin: 5px;
+    }
+    
+    .breadCrumb .list-breadcrumb li:first-child a::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background-image: url(../img/wheat.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0 2px;
+    }
+    
+    .breadCrumb .list-breadcrumb li:nth-child(2)::before,
+    .breadCrumb .list-breadcrumb li:nth-child(3)::before {
+        content: "/";
+        color: rgba(27, 27, 28, 0.671);
+    }
+    /* 麵包屑*/
+    
+    .breadCrumb {
+        margin: 80px 0 10px 15%;
+    }
+    
+    .breadCrumb .list-breadcrumb li {
+        display: inline-block;
+    }
+    
+    .breadCrumb .list-breadcrumb a {
+        font-size: 14px;
+        color: #1B1B1C;
+        text-decoration: none;
+        display: inline-block;
+        margin: 5px;
+    }
+    
+    .breadCrumb .list-breadcrumb li:first-child a::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background-image: url(../img/wheat.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0 2px;
+    }
+    
+    .breadCrumb .list-breadcrumb li:nth-child(2)::before,
+    .breadCrumb .list-breadcrumb li:nth-child(3)::before {
+        content: "/";
+        color: rgba(27, 27, 28, 0.671);
+    }
+    /* .banner */
+    
+    .banner {
+        background-color: #F8F6ED;
+    }
+    
+    .banner h1 {
+        text-align: center;
+        font-size: 28px;
+        margin: 30px 0;
+    }
+    
+    .banner img {
+        width: 100%;
+        margin-bottom: 50px;
+        border-radius: 5px;
+    }
+    /* 介紹 */
+    
+    .textwrap {
+        background-image: url(../img/aboutbg.png);
+        background-size: cover;
+        text-align: center;
+        padding: 100px;
+    }
+    
+    .textwrap .bg {
+        margin: 50px;
+        padding: 50px;
+        background-color: rgba(252, 252, 252, 0.726);
+    }
+    
+    .textwrap .item {
+        position: relative;
+    }
+    
+    .textwrap h2 {
+        font-size: 20px;
+        margin: 20px;
+    }
+    
+    .textwrap h2::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #9A7064;
+        position: absolute;
+        left: 0px;
+        top: 40px;
+    }
+    
+    .textwrap p {
+        margin: 30px;
+    }
+    
+    .textwrap .pic {
+        width: 200px;
+        height: 200px;
+        margin: 30px auto;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    /* 好評推薦 .praise*/
+    
+    .praise {
+        margin-bottom: 50px;
+    }
+    
+    .praise .col-10 {
+        background-color: #f3f3f3;
+    }
+    
+    .praise .item {
+        overflow: hidden;
+        border-radius: 5px;
+        margin: 20px;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    .praise .item a {
+        display: block;
+    }
+    
+    .praise h2 {
+        font-size: 24px;
+        margin: 30px;
+        text-align: center;
+    }
+    
+    .praise img {
+        width: 100%;
+        transition: all 0.7s;
+    }
+    
+    .praise .item:hover img {
+        transform: scale(1.1, 1.1);
+    }
+    
+    @media screen and (min-width:576px) and (max-width:767px) {
+        .banner h1 {
+            font-size: 20px;
+        }
+        .textwrap {
+            padding: 0px;
+        }
+        .textwrap h2 {
+            font-size: 18px;
+            margin: 10px;
+        }
+        .praise h2 {
+            font-size: 18px;
+        }
+    }
+    
+    @media screen and (max-width:575px) {
+        .banner h1 {
+            font-size: 16px;
+        }
+        .banner img {
+            margin-bottom: 20px;
+        }
+        .textwrap {
+            padding: 0px;
+        }
+        .textwrap .bg {
+            margin: 0px;
+            padding: 0px;
+        }
+        .textwrap h2 {
+            font-size: 14px;
+            margin: 10px;
+        }
+        .textwrap h2::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #9A7064;
+            position: absolute;
+            left: 0px;
+            top: 30px;
+        }
+        .textwrap p {
+            margin: 12px;
+        }
+        .textwrap .pic {
+            width: 150px;
+            height: 150px;
+            margin: 30px auto;
+        }
+        .praise h2 {
+            font-size: 14px;
+        }
+        .praise .item {
+            margin: 5px;
+        }
+    }

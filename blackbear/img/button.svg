@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="116" height="46" viewBox="0 0 116 46">
+  <g id="Group_184" data-name="Group 184" transform="translate(-395 -2034)">
+    <g id="Rectangle_181" data-name="Rectangle 181" transform="translate(395 2034)" fill="#fff" stroke="#0a2530" stroke-width="1">
+      <rect width="116" height="46" stroke="none"/>
+      <rect x="0.5" y="0.5" width="115" height="45" fill="none"/>
+    </g>
+    <g id="Group_183" data-name="Group 183" transform="translate(418 2061.012)">
+      <line id="Line_24" data-name="Line 24" x2="9.118" y2="10.703" transform="translate(59.091)" fill="none" stroke="#0a2530" stroke-linecap="round" stroke-width="1"/>
+      <line id="Line_25" data-name="Line 25" x2="68.208" transform="translate(0 10.703)" fill="none" stroke="#0a2530" stroke-width="1"/>
+    </g>
+    <text id="more" transform="translate(438 2058)" fill="#0a2530" font-size="16" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-19.699" y="0">more</tspan></text>
+  </g>
+</svg>

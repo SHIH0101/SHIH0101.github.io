@@ -1,0 +1,17 @@
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: #EDEAE7;
+    position: relative;
+}
+
+footer .text {
+    padding: 5px;
+}
+
+footer .text p {
+    font-family: 'Noto Sans TC';
+    text-align: left;
+    margin: 5px;
+}

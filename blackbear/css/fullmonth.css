@@ -1,0 +1,297 @@
+        @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+        * {
+            font-family: 'Noto Sans TC';
+        }
+        /* 麵包屑*/
+        
+        .breadCrumb {
+            margin: 80px 0 10px 15%;
+        }
+        
+        .breadCrumb .list-breadcrumb li {
+            display: inline-block;
+        }
+        
+        .breadCrumb .list-breadcrumb a {
+            font-size: 14px;
+            color: #1B1B1C;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+        }
+        
+        .breadCrumb .list-breadcrumb li:first-child a::before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            background-image: url(../img/wheat.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 0 2px;
+        }
+        
+        .breadCrumb .list-breadcrumb li:nth-child(2)::before,
+        .breadCrumb .list-breadcrumb li:nth-child(3)::before {
+            content: "/";
+            color: rgba(27, 27, 28, 0.671);
+        }
+        /* .banner */
+        
+        .banner {
+            overflow: hidden;
+        }
+        
+        .banner div {
+            padding: 0;
+        }
+        
+        .banner .img {
+            overflow: hidden;
+        }
+        
+        .banner .img img {
+            width: 100%;
+            transition: all 0.7s;
+        }
+        
+        .banner .img:hover img {
+            transform: scale(1.1, 1.1);
+        }
+        
+        .banner .coltext {
+            background-color: #F8F6ED;
+            position: relative;
+        }
+        
+        .banner .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .banner .text h1 {
+            font-size: 28px;
+            margin-bottom: 10%;
+        }
+        
+        .banner .text p {
+            font-size: 16px;
+        }
+        /*申請流程 .sop */
+        
+        .sop {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .sop h2 {
+            font-size: 24px;
+            margin: 60px 0 30px;
+            color: #2D4160;
+        }
+        
+        .sop img {
+            width: 100%;
+        }
+        
+        .sop h3 {
+            font-size: 16px;
+        }
+        
+        .sop p {
+            margin-top: 20px;
+        }
+        /* 申請表單 .form */
+        
+        .form {
+            background-color: #F8F6ED;
+        }
+        
+        .form form {
+            background-color: #fff;
+            width: 500px;
+            margin: 0 auto 30px;
+            border: 1px dashed rgb(121, 74, 61);
+        }
+        
+        .form h2 {
+            text-align: center;
+            font-size: 24px;
+            margin: 30px 0;
+            color: #2D4160;
+        }
+        
+        .form form .item {
+            margin: 20px 0;
+            font-size: 20px;
+        }
+        
+        .form form .item>label {
+            width: 100px;
+            margin: 0 20px;
+            display: inline-block;
+            text-align: left;
+            vertical-align: top;
+            line-height: 31px;
+            font-size: 16px;
+        }
+        
+        .form form .item .reply,
+        .birthday_year,
+        .birthday_month,
+        .birthday_day {
+            display: inline-block;
+        }
+        
+        .form .reply input {
+            line-height: 26px;
+        }
+        
+        .form .reply label {
+            font-size: 16px;
+            line-height: 26px;
+            margin-right: 5px;
+        }
+        
+        .form .relationship_other {
+            width: 60px;
+            vertical-align: top;
+            margin-left: 5px;
+        }
+        
+        .form .photo {
+            font-size: 16px;
+            display: inline-block;
+        }
+        
+        .form .photo p {
+            font-size: 16px;
+            margin: 3px 0 3px 145px;
+        }
+        
+        .form .photo input {
+            font-size: 16px;
+        }
+        
+        .form textarea {
+            display: inline-block;
+            resize: vertical;
+        }
+        
+        .form button {
+            width: 100px;
+            height: 30px;
+            background-color: #2D4160;
+            color: #fff;
+            border-radius: 5px;
+            margin-left: calc(50% - 50px);
+            margin-bottom: 20px;
+        }
+        
+        @media screen and (min-width:768px) and (max-width:992px) {
+            .banner .text h1 {
+                font-size: 20px;
+                margin-bottom: 10%;
+            }
+            .banner .text p {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            .sop h2 {
+                font-size: 18px;
+            }
+            .form h2 {
+                font-size: 18px;
+            }
+        }
+        
+        @media screen and (min-width: 576px) and (max-width: 767px) {
+            .banner .text h1 {
+                font-size: 18px;
+                margin-bottom: 10%;
+            }
+            .banner .text p {
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+            .sop h2 {
+                font-size: 16px;
+            }
+            .sop h3 {
+                font-size: 14px;
+            }
+            .form h2 {
+                font-size: 16px;
+            }
+            .form form .item>label {
+                width: 50px;
+                font-size: 14px;
+            }
+            .form p {
+                font-size: 14px;
+            }
+        }
+        
+        @media screen and (max-width: 575px) {
+            .banner .text {
+                position: absolute;
+                top: 30%;
+                left: 30%;
+                transform: translate(-30%, -30%);
+            }
+            .banner .text h1 {
+                font-size: 18px;
+                margin-bottom: 10%;
+            }
+            .banner .text p {
+                font-size: 10px;
+                margin-bottom: 3px;
+            }
+            .sop h2 {
+                font-size: 16px;
+            }
+            .sop h3 {
+                font-size: 14px;
+            }
+            .form form {
+                width: 250px;
+                max-width: 350px;
+            }
+            .form h2 {
+                font-size: 16px;
+            }
+            .form form .item>label {
+                width: 100px;
+                font-size: 14px;
+                display: block;
+            }
+            .form form .item>input {
+                width: 150px;
+                font-size: 14px;
+                display: block;
+                margin-left: 20px;
+            }
+            .form .reply label {
+                font-size: 14px;
+                line-height: 26px;
+                margin-right: 5px;
+            }
+            .form .item #dad {
+                margin-left: 20px;
+            }
+            .form .reply .relationship_other {
+                width: 50px;
+            }
+            .form .item .birthday_year {
+                margin-left: 20px;
+            }
+            .form .photo p {
+                font-size: 12px;
+                margin-left: 20px;
+            }
+            .form textarea {
+                margin-left: 20px;
+            }
+        }

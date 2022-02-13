@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>甜甜圈-黑熊手作甜點</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../vendors/bootstrap-4.4.1/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header nav">
+        <div class="container-fluid">
+            <input type="checkbox" id="menu-control">
+
+            <div class="logo">
+                <a href="../index.html" target="_self"><img src="../img/logo.png" alt="logo"></a>
+            </div>
+
+            <label for="menu-control" class="menu-btn"></label>
+
+            <nav class="nav-all">
+                <ul class="list-all">
+                    <li><a href="dessert.html"><span>熱銷甜點</span></a></li>
+                    <li><a href="fullmonth.html"><span>彌月蛋糕</span></a></li>
+                    <li><a href="gift.html"><span>喜餅禮盒</span></a></li>
+                    <li><a href="food.html"><span>美味秘訣</span></a></li>
+                    <li><a href="about.html"><span>關於我們</span></a></li>
+                    <li>
+                        <nav class="nav-member">
+                            <ul class="list-member">
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="nav-member">
+                <ul class="list-member">
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+
+        <!-- 麵包屑 -->
+        <div class="breadCrumb">
+            <ul class="list-breadcrumb">
+                <li><a href="../index.html">首頁</a></li>
+                <li><a href="dessert.html">熱銷甜點</a></li>
+                <li><a href="product.html">甜甜圈</a></li>
+            </ul>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- 左邊商品文字資訊 -->
+                <div class="col-4 bgleft">
+                    <div class="text" data-aos="zoom-in-up" data-aos-duration="1200">
+                        <div class="row justift-content-end title">
+                            <div class="col-2"></div>
+                            <div class="col-10">
+                                <div class="row">
+                                    <div class="col">
+                                        <h1 id="productName">原味甜甜圈</h1>
+                                        <p id="productEnName">Plain Donut</p>
+                                    </div>
+                                </div>
+                                <div class="row flavor">
+                                    <div class="col-md-4 col-lg-3">
+                                        <p>口味</p>
+                                    </div>
+                                    <div class="col-9 ">
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="radio" name="flavor" id="plain" value="plain" checked>
+                                                <label for="plain" class="plain">原味</label>
+                                                <input type="radio" name="flavor" id="strawberry" value="strawberry">
+                                                <label for="strawberry">草莓</label>
+                                                <input type="radio" name="flavor" id="matcha" value="matcha">
+                                                <label for="matcha">抹茶</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="radio" name="flavor" id="chocolate" value="chocolate">
+                                                <label for="chocolate">巧克力</label>
+                                                <input type="radio" name="flavor" id="lemon" value="lemon">
+                                                <label for="lemon">檸檬</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row amount">
+                                    <div class="col-md-4 col-lg-3">
+                                        <p>數量</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <button type="button" id="btnminus">-</button>
+                                        <span id="amount">1</span>
+                                        <button type="button" id="btnplus">+</button>
+                                    </div>
+                                </div>
+                                <div class="row price">
+                                    <div class="col-md-4 col-lg-3">
+                                        <p>售價</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p id="price">35元</p>
+                                    </div>
+                                </div>
+                                <div class="row cart">
+                                    <div class="col-md-4 col-lg-3"></div>
+                                    <div class="col-9">
+                                        <div class="button">
+                                            <div class="white">
+                                                <span>購買</span>
+                                            </div>
+                                            <div class="blue"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 bgright">
+                    <div class="row">
+                        <div class="col bigimg" data-aos="zoom-in-up" data-aos-duration="1200">
+                            <div class="row justify-content-center">
+                                <!-- 右邊甜甜圈大圖 -->
+                                <img src="../img/donut_plain-1.png" alt="甜甜圈" id="bigimg">
+                            </div>
+                            <div class="row justify-content-center smallimg">
+                                <!-- 右邊甜甜圈口味小圖 -->
+                                <div class="col-2">
+                                    <img src="../img/donut_plain-1.png" alt="原味甜甜圈" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-once="true">
+                                </div>
+                                <div class="col-2">
+                                    <img src="../img/donut_strawberry-1.png" alt="草莓甜甜圈" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="100" data-aos-once="true">
+                                </div>
+                                <div class="col-2">
+                                    <img src="../img/donut_matcha-1.png" alt="抹茶甜甜圈" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="200" data-aos-once="true">
+                                </div>
+                                <div class="col-2">
+                                    <img src="../img/donut_chocolate-1.png" alt="巧克力甜甜圈" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="300" data-aos-once="true">
+                                </div>
+                                <div class="col-2">
+                                    <img src="../img/donut_lemon-1.png" alt="檸檬甜甜圈" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="400" data-aos-once="true">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 右邊下方商品介紹-->
+                    <div class="row section section1 justify-content-center">
+
+                        <div class="col-md-4 align-self-center">
+                            <div class="text1" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-once="true">
+                                <h3>經典不敗好滋味</h3>
+                                <p>一口咬下，麵包鬆軟輕盈，現烤的經典糖霜隨之化開，熱騰騰的甜甜圈是大人小孩都喜歡的好滋味。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7 pic">
+                            <img src="../img/product-1.jpg" alt="灑糖霜的甜甜圈" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="200" data-aos-once="true">
+                        </div>
+
+                    </div>
+                    <div class="row section section2 justify-content-center">
+                        <div class="col-md-6">
+                            <img src="../img/product-2.png" alt="小孩買甜甜圈" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-once="true">
+                        </div>
+                        <div class="col-md-4 align-self-center">
+                            <div class="text2" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="200" data-aos-once="true">
+                                <h3>堅持手工製作</h3>
+                                <p>找到最適合的酵母菌，採用健康的油品，堅持手工製作，希望為每一位客人提供最棒的甜甜圈。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row ">
+                <div class="col text ">
+                    <p>客服電話：03-2345678</p>
+                    <p>營業時間：11:00-19:00 每週一公休</p>
+                    <p>門市地址：桃園市中壢區中央路300號</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/product.js"></script>
+
+</body>
+
+</html>

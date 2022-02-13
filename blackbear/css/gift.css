@@ -1,0 +1,405 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+    font-family: 'Noto Sans TC';
+}
+
+
+/* 麵包屑*/
+
+.breadCrumb {
+    margin: 80px 0 10px 15%;
+}
+
+.breadCrumb .list-breadcrumb li {
+    display: inline-block;
+}
+
+.breadCrumb .list-breadcrumb a {
+    font-size: 14px;
+    color: #1B1B1C;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.breadCrumb .list-breadcrumb li:first-child a::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-image: url(../img/wheat.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+}
+
+.breadCrumb .list-breadcrumb li:nth-child(2)::before,
+.breadCrumb .list-breadcrumb li:nth-child(3)::before {
+    content: "/";
+    color: rgba(27, 27, 28, 0.671);
+}
+
+
+/* .banner */
+
+.banner {
+    background-color: #F8F6ED;
+    color: #1b1b1c;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.col-text {
+    max-height: 400px;
+}
+
+.banner .text {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner .text h1 {
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.banner .text p {
+    font-size: 16px;
+}
+
+.banner .col-sm-8 {
+    padding: 0;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+/* 文字介紹 */
+
+.text1 {
+    margin: 50px 0px;
+    text-align: center;
+}
+
+
+/* 翻頁*/
+
+.bg {
+    background: #f3f3f3;
+    padding-top: 40px;
+}
+
+.bb-custom-wrapper .bb-bookblock {
+    box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
+}
+
+.bb-bookblock {
+    border: 1px solid #000;
+    height: 450px;
+    z-index: 100;
+    -webkit-perspective: 1300px;
+    perspective: 1300px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+/* 頁面內容 */
+
+.bb-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: #fff;
+}
+
+.bg img {
+    margin: 10px;
+    max-width: 90%;
+    border-radius: 3px;
+}
+
+
+/* 第一頁 */
+
+.bb-item .number,
+.bb-page .number {
+    width: 50px;
+    height: 50px;
+    background-color: #2D4160;
+    margin-top: -80px;
+    margin-bottom: 30px;
+}
+
+.bb-item .number p,
+.bb-page .number p {
+    color: #f3f3f3;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.bb-item .text h3,
+.bb-page .text h3 {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.bb-item .text p,
+.bb-page .text p {
+    margin-bottom: 5px;
+}
+
+.bb-item .woman img,
+.bb-page .woman img {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* 翻頁按鈕 */
+
+@font-face {
+    font-family: 'arrows';
+    src: url('../vendors/BookBlock/fonts/arrows/arrows.eot');
+    src: url('../vendors/BookBlock/fonts/arrows/arrows.eot?#iefix') format('embedded-opentype'), url('../vendors/BookBlock/fonts/arrows/arrows.woff') format('woff'), url('../vendors/BookBlock/fonts/arrows/arrows.ttf') format('truetype'), url('../vendors/BookBlock/fonts/arrows/arrows.svg#arrows') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bb-custom-wrapper nav {
+    width: 100%;
+    height: 30px;
+    margin: 1em auto 30px;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+}
+
+.bb-custom-wrapper nav a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 2px;
+    background: #2D4160;
+    color: #fff;
+    font-size: 0;
+    margin: 2px;
+}
+
+.bb-custom-wrapper nav a:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.bb-custom-icon:before {
+    font-family: 'arrows';
+    font-size: 20px;
+    line-height: 30px;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+
+.bb-custom-icon-first:before,
+.bb-custom-icon-last:before {
+    content: "\e002";
+}
+
+.bb-custom-icon-arrow-left:before,
+.bb-custom-icon-arrow-right:before {
+    content: "\e003";
+}
+
+.bb-custom-icon-arrow-left:before,
+.bb-custom-icon-first:before {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+/* 翻頁功能 */
+
+.bb-page {
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+}
+
+.bb-vertical .bb-page {
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.bb-page>div,
+.bb-outer,
+.bb-content,
+.bb-inner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.bb-vertical .bb-content {
+    width: 200%;
+}
+
+.bb-page>div {
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.bb-vertical .bb-back {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.bb-outer {
+    width: 100%;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.bb-bookblock.bb-vertical>div.bb-page:first-child,
+.bb-bookblock.bb-vertical>div.bb-page:first-child .bb-back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.bb-content {
+    background: #fff;
+}
+
+.bb-vertical .bb-front .bb-content {
+    left: -100%;
+}
+
+.bb-horizontal .bb-front .bb-content {
+    top: -100%;
+}
+
+.bb-vertical .bb-flip-next,
+.bb-vertical .bb-flip-initial {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.bb-vertical .bb-flip-prev {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.bb-vertical .bb-flip-next-end {
+    -webkit-transform: rotateY(-15deg);
+    transform: rotateY(-15deg);
+}
+
+.bb-vertical .bb-flip-prev-end {
+    -webkit-transform: rotateY(-165deg);
+    transform: rotateY(-165deg);
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .banner .text h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .banner .text p {
+        font-size: 14px;
+    }
+    .text1 {
+        width: 600px;
+        margin: 40px auto;
+    }
+    .bb-item .text,
+    .bb-page .text {
+        width: 380px;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    .banner .text h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .banner .text p {
+        font-size: 14px;
+    }
+    .text1 {
+        width: 450px;
+        margin: 40px auto;
+    }
+    .bb-item .woman img,
+    .bb-page .woman img {
+        width: 100%;
+        position: relative;
+        top: 0;
+        right: 5px;
+        transform: translateY(0%);
+    }
+    .bb-item .text,
+    .bb-page .text {
+        width: 300px;
+        margin-top: 120px;
+    }
+    .bb-item .giftpic,
+    .bb-page .giftpic {
+        width: 120%;
+        max-width: 200%;
+        position: relative;
+        right: 20px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .banner .text {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .banner .text h1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .banner .text p {
+        font-size: 12px;
+        text-align: center;
+        margin: 5px;
+    }
+    .text1 {
+        max-width: 380px;
+        margin: 40px auto 20px;
+    }
+    .bb-item .xstext,
+    .bb-page .xstext {
+        margin: 100px 20px;
+    }
+    .bb-item .giftpic,
+    .bb-page .giftpic {
+        width: 120%;
+        max-width: 200%;
+        position: absolute;
+        right: 20px;
+    }
+}

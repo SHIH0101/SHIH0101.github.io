@@ -1,0 +1,155 @@
+
+@font-face {
+    font-family: 'jf-openhuninn-1.0';
+    src: url('../font/jf-openhuninn-1.0.woff') format("woff"),
+        url('../font/jf-openhuninn-1.0.ttf') format("ttf")
+}
+
+body {
+    font-family: 'jf-openhuninn-1.0';
+}
+
+/* @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+body{
+  font-family: "Noto Sans TC", sans-serif;
+} */
+
+html, body {
+    height: 100%;
+
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(130deg, #212A51 50%, #689CB2 50%);
+    color: #4A3600;
+}
+
+.row.wrap-background {
+    height: 100%;
+}
+
+.wrap-content {
+    width: 100%;
+    height: 80%;
+    /* background-color: #EDE1D6; */
+    background-color: #fff;
+    padding: 20px 0;
+
+}
+
+.wrap-content .row {
+    height: 100%;
+}
+
+/* 換頁 */
+.dot-page i {
+    display: block;
+    line-height: 1.2rem;
+}
+
+/* profile */
+
+.profile .photo {
+    width: 150px;
+    height: 150px;
+    margin: 0px auto 20px;
+}
+
+.profile .photo img {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+.profile .contact {
+    margin: auto;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.profile span {
+    word-wrap: break-word;
+}
+
+.profile .contact .text {
+    line-height: 1.2rem;
+    padding-top: 20px;
+}
+
+/* demo */
+.wrap-content h2 {
+    font-size: 24px;
+}
+
+/* timeline */
+
+.timeline {
+    position: relative;
+    margin-bottom: 100px;
+
+}
+
+.timeline img {
+    width: 80%;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.timeline .timeline-card {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F3EEE9;
+    position: relative;
+}
+
+.timeline .timeline-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 2px;
+    height: 130%;
+    background-color: #EDE1D6;
+}
+.timeline .timeline-last::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 2px;
+    height: 100%;
+    background-color: #EDE1D6;
+}
+
+
+
+.timeline .timeline-card::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #EDE1D6;
+    z-index: 2;
+}
+
+.timeline h3 {
+    padding-left: 30px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.timeline p{
+    padding-left: 30px;
+}
+.timeline-card ul {
+    list-style: square inside;
+}
