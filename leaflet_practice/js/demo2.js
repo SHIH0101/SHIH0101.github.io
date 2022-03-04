@@ -238,13 +238,11 @@ function removeClicked() {
 function dragHandler(e) {
     let polylines = allPolylines[e.target.options.group].polyline,
         latlngs = allPolylines[e.target.options.group].latlng,
-        oldLat = e.target.latlng[0],
-        oldLng = e.target.latlng[1],
         newLatlng = [e.latlng.lat, e.latlng.lng];
 
     latlngs.forEach((polyline, polylineIndex) => {
         polyline.forEach((marker, markerIndex) => {
-            if (marker[0] === oldLat && marker[1] === oldLng) {
+            if (new L.LatLng(marker[0], marker[1]).equals(e.target.latlng)) {
                 let newPolylineLatlng = [];
                 let anotherPoint = polylines[polylineIndex].getLatLngs();
                 if (markerIndex === 0) {
