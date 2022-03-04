@@ -36,7 +36,7 @@
         <div class="code">
             <pre>
                 <code class="language-javascript" >
-                    /*-------------------------------------------
+        /*-------------------------------------------
                     config map
         *-------------------------------------------*/
         let mapConfig = {
@@ -137,19 +137,17 @@
         
             function createStationIcon() {
         
-                let iconTemplate = `<div class="marker" id=${point.id}>  
-                                        <svg version="1.1" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-                                            <g>
-                                                <circle cx="50" cy="50" r="48" class="${point.status}">
-                                                </circle>
-                                                <text x="50" y="20" style="font-size:14px;text-anchor:middle;">${point.textTop}</text>
-                                                <image href="./images//marker-icon-2x-gold.png"
-                                                width="30px" height="30px" x="50%" y="50%" transform="translate(-15,-15)"
-                                                    width="30px" height="30px" x="50%" y="50%" transform="translate(-15,-15)" />
-                                                <text x="50" y="80" style="font-size:14px;text-anchor:middle;">${point.name}</text>
-                                            </g>
-                                        </svg> 
-                                </div>`;
+                let iconTemplate = `&ltdiv class="marker" id=${point.id}&gt  
+                                        &ltsvg version="1.1" width="100" height="100" xmlns="http://www.w3.org/2000/svg"&gt
+                                            &ltg&gt
+                                                &ltcircle cx="50" cy="50" r="48" class="${point.status}"&gt&lt/circle&gt
+                                                &lttext x="50" y="20" style="font-size:14px;text-anchor:middle;"&gt${point.textTop}&lt/text&gt
+                                                &ltimage href="./images//marker-icon-2x-gold.png"
+                                                width="30px" height="30px" x="50%" y="50%" transform="translate(-15,-15)"/&gt
+                                                &lttext x="50" y="80" style="font-size:14px;text-anchor:middle;"&gt${point.name}&lt/text&gt
+                                            &lt/g&gt
+                                        &lt/svg&gt 
+                                &lt/div>`;
                 let stationIcon = L.DivIcon.extend({
                     options: {
                         className: 'css-icon',
